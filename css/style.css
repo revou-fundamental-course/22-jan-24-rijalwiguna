@@ -127,6 +127,10 @@ body {
 }
 
 
+.form > textarea {
+    max-width: 100%;
+}
+
 input, button {
     padding: 8px;
     margin-bottom: 20px;
@@ -283,7 +287,7 @@ footer {
     }
 
     .form > textarea {
-        max-width: 60%;
+        max-width: 100%;
     }
 }
 
