@@ -281,6 +281,10 @@ footer {
     .our-prodact > img {
         max-width: 100%;
     }
+
+    .form > textarea {
+        max-width: 97%;
+    }
 }
 
 
