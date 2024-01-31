@@ -69,27 +69,28 @@
             </div>
 
             <div>
-                <form name="form-validate" onsubmit="return validateForm()">
+                <form id="form" name="form-validate" onsubmit="return validateForm()">
                     <div class="form" ">
                         <h3>Contact Us</h3><br>
                         <p>Sales akan menghubungi anda dalam 1x24 jam <span>setelah data kami terima.</span></p><br><br>
 
                         <label for="name">Your Name</label><br>
-                        <input required type="text" name="name" id="name" placeholder="First and last name"><br>
+                        <input type="text" name="name" id="name" placeholder="First and last name"><br>
 
                         <label for="email">Email Adress</label><br>
-                        <input required type="email" name="emal" id="email" placeholder="example@gmail.com"><br>
+                        <input type="email" name="emal" id="email" placeholder="example@gmail.com"><br>
 
                         <label for="email">Phone Number</label><br>
-                        <input required type="number" name="number-phone" id="phone-number"
+                        <input type="number" name="number-phone" id="phone-number"
                             placeholder="Number Phone"><br>
 
                         <label for="email">Messages</label><br>
-                        <textarea required name="messages" id="messages" cols="52%" rows="10"></textarea>
+                        <textarea name="messages" id="messages" cols="52%" rows="10"></textarea>
 
 
                         <button type="submit" value="submit">Send</button>
                         <div>
+                            <h4>Data yang anda inputkan : </h4>
                             <p> nama : <span id="sender-name"></span></p>
                             <p> email : <span id="sender-email"></span></p>
                             <p> no handphone : <span id="sender-phone"></span></p>
@@ -165,7 +166,7 @@
                     officia vel voluptatibus provident adipisci fugit vitae excepturi quae dolores assumenda rem.
                     Mollitia.</p>
 
-                <button type="submit"> Call To Action</button>
+                <button type="submit"><a href="#form"> Call To Action</a></button>
             </div>
     </main>
 

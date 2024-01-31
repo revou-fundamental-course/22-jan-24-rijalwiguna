@@ -5,7 +5,19 @@ function validateForm() {
     const messages = document.forms["form-validate"] ["messages"].value;
 
     if (name == "") {
-        alert("Tidak boleh kosong ")
+        alert("Nama idak boleh kosong ")
+        return false;
+    }
+    if (email == "") {
+        alert("Email Tidak boleh kosong ")
+        return false;
+    }
+    if (phone == "") {
+        alert("Number phone tidak boleh kosong ")
+        return false;
+    }
+    if (messages == "") {
+        alert("Messages tidak boleh kosong ")
         return false;
     }
     document.getElementById("sender-name").innerHTML = name;

@@ -239,6 +239,10 @@ footer {
     color: aliceblue;
     border-radius: 3px;
 } 
+.closing-argument > button > a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 
 
