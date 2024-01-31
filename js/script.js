@@ -1,3 +1,22 @@
+function validateForm() {
+    const name = document.forms["form-validate"]["name"].value;
+    const email = document.forms["form-validate"] ["email"].value;
+    const phone = document.forms["form-validate"] ["number-phone"].value;
+    const messages = document.forms["form-validate"] ["messages"].value;
+
+    if (name == "") {
+        alert("Tidak boleh kosong ")
+        return false;
+    }
+    document.getElementById("sender-name").innerHTML = name;
+    document.getElementById("sender-email").innerHTML = email;
+    document.getElementById("sender-phone").innerHTML = phone;
+    document.getElementById("sender-messages").innerHTML = messages;
+
+    return false;
+}
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -21,3 +40,5 @@ function showDivs(n) {
 setInterval(() => {
     plusDivs(1);
 }, 2000);
+
+

@@ -32,12 +32,9 @@
     <main>
         <div class="main-content" id="main-content">
             <div class="our-prodact">
-                <img src="assets/banner 1.jpg"
-                    alt="content" class="bannerSlide">
-                <img src="assets/banner 2.png"
-                    alt="content" class="bannerSlide">
-                <img src="assets/banner 3.jpg"
-                    alt="content" class="bannerSlide">
+                <img src="assets/banner 1.jpg" alt="content" class="bannerSlide">
+                <img src="assets/banner 2.png" alt="content" class="bannerSlide">
+                <img src="assets/banner 3.jpg" alt="content" class="bannerSlide">
                 <p><i>"Setiap hari beli sayur buah yang fresh disini"</i></p>
 
                 <div class="people">
@@ -71,27 +68,37 @@
                 </div>
             </div>
 
-            <div class="form">
-                <h3>Contact Us</h3><br>
-                <p>Sales akan menghubungi anda dalam 1x24 jam <span>setelah data kami terima.</span></p><br><br>
+            <div>
+                <form name="form-validate" onsubmit="return validateForm()">
+                    <div class="form" ">
+                        <h3>Contact Us</h3><br>
+                        <p>Sales akan menghubungi anda dalam 1x24 jam <span>setelah data kami terima.</span></p><br><br>
 
-                <label for="name">Your Name</label><br>
-                <input type="text" name="name" id="name" placeholder="First and last name"><br>
+                        <label for="name">Your Name</label><br>
+                        <input required type="text" name="name" id="name" placeholder="First and last name"><br>
 
-                <label for="email">Email Adress</label><br>
-                <input type="email" name="" id="" placeholder="example@gmail.com"><br>
+                        <label for="email">Email Adress</label><br>
+                        <input required type="email" name="emal" id="email" placeholder="example@gmail.com"><br>
 
-                <label for="option">What are you interested in</label><br>
-                <select name="option" id="" aria-placeholder="select option">
-                    <option value="" selected>Select option</option>
-                    <hr>
-                    <option value="">Wortel</option>
-                    <option value="">Kentang</option>
-                    <option value="">Semangka</option>
-                    <option value="">Pepaya</option>
-                </select><br>
+                        <label for="email">Phone Number</label><br>
+                        <input required type="number" name="number-phone" id="phone-number"
+                            placeholder="Number Phone"><br>
 
-                <button type="submit">Send</button>
+                        <label for="email">Messages</label><br>
+                        <textarea required name="messages" id="messages" cols="52%" rows="10"></textarea>
+
+
+                        <button type="submit" value="submit">Send</button>
+                        <div>
+                            <p> nama : <span id="sender-name"></span></p>
+                            <p> email : <span id="sender-email"></span></p>
+                            <p> no handphone : <span id="sender-phone"></span></p>
+                            <p> pesan : <span id="sender-messages"></span></p>
+                        </div>
+                    </div>
+
+
+                </form>
             </div>
         </div>
 
@@ -104,50 +111,59 @@
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>Fresh Vegetable</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
                 </div>
                 <div class="list-product">
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>Fresh Fruit</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
                 </div>
                 <div class="list-product">
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>instant Delivery</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
                 </div>
                 <div class="list-product">
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>Kitchen Ingredient</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
                 </div>
                 <div class="list-product">
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>Kitchen Set</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
                 </div>
                 <div class="list-product">
                     <i class="fa-solid fa-apple-whole fa-1xl"></i>
                     <div>
                         <h3>Bunding Set</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Laborum, libero! Ab officia autem officiis atque repellat?</p>
                     </div>
-                </div> 
+                </div>
             </div>
 
 
             <div class="closing-argument" id="closing-aargument">
                 <h1>Your Closing Argument Headline</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, recusandae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum cupiditate odio nemo perferendis ea consectetur, nobis officia vel voluptatibus provident adipisci fugit vitae excepturi quae dolores assumenda rem. Mollitia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, recusandae?Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Tempora nostrum cupiditate odio nemo perferendis ea consectetur, nobis
+                    officia vel voluptatibus provident adipisci fugit vitae excepturi quae dolores assumenda rem.
+                    Mollitia.</p>
 
                 <button type="submit"> Call To Action</button>
             </div>
