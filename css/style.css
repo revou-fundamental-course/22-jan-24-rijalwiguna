@@ -283,7 +283,7 @@ footer {
     }
 
     .form > textarea {
-        max-width: 97%;
+        max-width: 60%;
     }
 }
 
